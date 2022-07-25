@@ -37,21 +37,19 @@ public class DatabaseCreator {
         try {
             statement.execute("create table person\n" +
                     "(\n" +
-                    "    id            serial\n" +
+                    "    id           bigserial,\n" +
+                    "    name         varchar not null,\n" +
+                    "    password     varchar,\n" +
+                    "    phone_number varchar,\n" +
+                    "    room_id      int\n" +
                     "        constraint person_pk\n" +
                     "            primary key,\n" +
-                    "    username      varchar not null,\n" +
-                    "    password      varchar not null,\n" +
-                    "    year_of_birth integer not null,\n" +
-                    "    role          varchar not null,\n" +
-                    "timer         bigint not null"+
+                    "    role         varchar not null\n" +
                     ");\n" +
                     "\n" +
-                    "alter table person\n" +
-                    "    owner to postgres;\n" +
-                    "\n" +
                     "create unique index person_id_uindex\n" +
-                    "    on person (id);" );
+                    "    on person (id);");
+
             System.out.println("Person table is created");
 
         } catch (Exception e) {
@@ -59,8 +57,8 @@ public class DatabaseCreator {
         }
 
         try {
-            statement.execute("INSERT INTO person(id, username, password, year_of_birth, role, timer) " +
-                    "values (0, 'admin', '$2a$10$1fGl7V0Z9xb6gC0AVtcXfu2Rjy3HsQyaqCjQ7mW0Fg6mkyD9DtnjO', 1900, 'ROLE_ADMIN', 1690830000000)");
+            statement.execute("INSERT INTO person(id, name , password, phone_number, room_id , role) values\n" +
+                    "                                                                         (0, 'admin', '$2a$10$1fGl7V0Z9xb6gC0AVtcXfu2Rjy3HsQyaqCjQ7mW0Fg6mkyD9DtnjO', '12345', 0, 'ROLE_USER')");
 
             System.out.println("DEFAULT USERNAME: ADMIN  \n DEFAULT PASSWORD: 123");
         }
