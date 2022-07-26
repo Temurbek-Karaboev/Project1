@@ -20,8 +20,24 @@ public class SecurityConfig {
                 .csrf()
                 .disable()
                 .authorizeExchange()
-                .anyExchange().permitAll()
-                .and().build();
+                .pathMatchers("/auth/registration")
+                .permitAll()
+                .and()
+                .authorizeExchange()
+                .pathMatchers("/auth/telegram-check")
+                .hasAnyRole("TELEGRAM")
+                .and()
+                .authorizeExchange()
+                .anyExchange().authenticated()
+                .and().formLogin().disable()
+                .build();
     }
+
+    /*        return http
+                .csrf()
+                .disable()
+//                .authorizeExchange()
+//                .anyExchange().permitAll()
+                .and().build();*/
 }
 

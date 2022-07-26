@@ -27,28 +27,22 @@ public class DatabaseCreator {
         connection = DriverManager.getConnection(url1, username1, password1);
         System.out.println("Connection to database is success");
         statement = connection.createStatement();
-        try{
-            statement.execute("create database 'download-upload'" );
-            System.out.println("Upload-Download Database created successfully");
-        }
-        catch (Exception e){
-            System.out.println("Upload-Download Database is already created");
-        }
         try {
             statement.execute("create table person\n" +
                     "(\n" +
                     "    id           bigserial,\n" +
                     "    name         varchar not null,\n" +
-                    "    password     varchar,\n" +
+                    "    password     varchar not null,\n" +
                     "    phone_number varchar,\n" +
-                    "    room_id      int\n" +
-                    "        constraint person_pk\n" +
-                    "            primary key,\n" +
+                    "    room_id      integer,\n" +
                     "    role         varchar not null\n" +
                     ");\n" +
                     "\n" +
+                    "alter table person\n" +
+                    "    owner to postgres;\n" +
+                    "\n" +
                     "create unique index person_id_uindex\n" +
-                    "    on person (id);");
+                    "    on person (id);\n");
 
             System.out.println("Person table is created");
 
@@ -65,26 +59,52 @@ public class DatabaseCreator {
         catch (Exception e) {
             System.out.println("Admin is already created");
         }
-        try {
-            statement.execute("create table items\n" +
+
+        try{
+            statement.execute("create table hotel\n" +
                     "(\n" +
-                    "    id       serial\n" +
-                    "        constraint items_pk\n" +
-                    "            primary key,\n" +
-                    "    name     varchar not null,\n" +
-                    "    path     varchar not null,\n" +
-                    "    username varchar not null,\n" +
-                    "    token    varchar\n" +
+                    "    id             bigserial,\n" +
+                    "    name           varchar not null,\n" +
+                    "    rooms          bigint  not null,\n" +
+                    "    reserved_rooms bigint  not null\n" +
                     ");\n" +
                     "\n" +
-                    "alter table items\n" +
+                    "create unique index hotel_id_uindex\n" +
+                    "    on hotel (id);\n" +
+                    "\n" +
+                    "alter table hotel\n" +
+                    "    add constraint hotel_pk\n" +
+                    "        primary key (id);\n");
+        }
+        catch (Exception e) {
+            System.out.println("Hotel table is already created");
+        }
+
+
+
+        try {
+            statement.execute("create table room\n" +
+                    "(\n" +
+                    "    id           bigserial\n" +
+                    "        constraint room_pk\n" +
+                    "            primary key,\n" +
+                    "    type         varchar,\n" +
+                    "    price        bigint,\n" +
+                    "    hotel_id     bigint                not null,\n" +
+                    "    user_id      bigint,\n" +
+                    "    start_date   bigint,\n" +
+                    "    end_date     bigint,\n" +
+                    "    \"isReserved\" boolean default false not null\n" +
+                    ");\n" +
+                    "\n" +
+                    "alter table room \n" +
                     "    owner to postgres;\n" +
                     "\n" +
-                    "create unique index items_id_uindex\n" +
-                    "    on items (id);");
-            System.out.println("Item table is created");
+                    "create unique index room_id_uindex\n" +
+                    "    on room (id);");
+            System.out.println("Room table is created");
         } catch (Exception e) {
-            System.out.println("Item table is already created");
+            System.out.println("Room table is already created");
         }
 
 
