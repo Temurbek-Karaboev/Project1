@@ -41,12 +41,13 @@ public class TelegramHandler extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
         sender(message, "Send number like +998901234567");
-        if(personRepository.findByPhoneNumber(message.getText()).isEmpty()){
-            sender(message, "Number not found !");
-        }
-        else{
+
+        if(personRepository.findByPhoneNumber(message.getText()).isPresent()){
             code =new GenerateTelegramCode().generateCode();
             sender(message, code );
+        }
+        else{
+            sender(message, "Number not found !");
         }
     }
 

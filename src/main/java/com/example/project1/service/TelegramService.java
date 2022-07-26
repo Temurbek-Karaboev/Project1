@@ -1,6 +1,7 @@
 package com.example.project1.service;
 
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Mono;
 
 @Service
 public class TelegramService {
@@ -10,7 +11,13 @@ public class TelegramService {
         this.telegramHandler = telegramHandler;
     }
 
-    public boolean checkTelegram(String code) {
-        return code.equals(telegramHandler.getCode());
-    }
+//     public boolean checkTg(String code){
+//         return code.equals(telegramHandler.getCode());
+//     }
+
+    public Mono<Boolean> checkTelegram(String code) {
+        boolean result = code.equals(telegramHandler.getCode());
+        return Mono.just(result);
+
+        }
 }

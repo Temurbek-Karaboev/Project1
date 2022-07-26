@@ -13,15 +13,25 @@ public class Person {
     @Column("room_id")
     private Long roomId;
     private String role;
+    private String step;
+
+    public String getStep() {
+        return step;
+    }
+
+    public void setStep(String step) {
+        this.step = step;
+    }
 
     public Person() {
     }
 
-    public Person(String name, String password, String phoneNumber, String role) {
+    public Person(String name, String password, String phoneNumber, String role, String step) {
         this.name = name;
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.role = role;
+        this.step = step;
     }
 
     public String getName() {
