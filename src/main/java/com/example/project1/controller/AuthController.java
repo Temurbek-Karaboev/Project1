@@ -33,20 +33,13 @@ public class AuthController {
        });
     }
 
-    @GetMapping("/telegram-message/{phoneNumber}")
-    public Mono<String> TelegramAuth(@PathVariable String phoneNumber){
-        Person person = objectMapper.convertValue(phoneNumber, Person.class);
-        return personService.registerUser(person).flatMap(data->Mono.just("Code has been sent via Telegram"));
-
-    }
-
-    @PostMapping("/telegram-check")
-    public Mono<String > TelegramCheck(@RequestParam String code){
+    @PostMapping("/telegram-check/{code}")
+    public Mono<String > TelegramCheck(@PathVariable("code") String code){
 return telegramService.checkTelegram(code).flatMap(data->{
     if(data){
         return Mono.just("You are successfully signed in") ;
     }
-        return  Mono.just("ERROR");
+        return  Mono.just("ERROR CODE");
 });
     }
 
@@ -54,5 +47,8 @@ return telegramService.checkTelegram(code).flatMap(data->{
     public  Mono<Map<String, String>> login(@RequestBody AuthDTO authDTO){
         return personService.findByUsername(authDTO);
     }
+
+
+
 
 }

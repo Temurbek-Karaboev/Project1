@@ -14,6 +14,9 @@ import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
+import reactor.core.publisher.Mono;
+
+import java.util.Optional;
 
 @Configuration
 @PropertySource("classpath:application.properties")
@@ -40,12 +43,24 @@ public class TelegramHandler extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
-        sender(message, "Send number like +998901234567");
-
-        if(personRepository.findByPhoneNumber(message.getText()).isPresent()){
-            code =new GenerateTelegramCode().generateCode();
-            sender(message, code );
+         sender(message, "Send number like +998901234567");
+        Optional<String> text = Optional.ofNullable(message.getText());
+        if(text.isPresent()){
+            personRepository.existsByPhoneNumber(text)
+                    .flatMap(exist->{
+                        if(Boolean.TRUE.equals(exist)){
+                            code=new GenerateTelegramCode().generateCode();
+                            sender(message,code);
+                            return Mono.empty();
+                        }
+                        sender(message,"Error");
+                        return Mono.empty();
+                    }).subscribe();
         }
+//        if(personRepository.findByPhoneNumber(text.isPresent())){
+//            code =new GenerateTelegramCode().generateCode();
+//            sender(message, code );
+//        }
         else{
             sender(message, "Number not found !");
         }

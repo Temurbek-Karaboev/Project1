@@ -43,13 +43,9 @@ public class SecurityConfig {
                 .permitAll()
                 .and()
                 .authorizeExchange()
-                .pathMatchers("/auth/telegram-check")
-                .hasAnyRole("TELEGRAM")
-                .and()
-                .authorizeExchange()
                 .anyExchange().authenticated()
                 .and().formLogin().disable()
-                .addFilterBefore(new JWTFilter(jwtUtil),
+                .addFilterAt(new JWTFilter(jwtUtil),
                         SecurityWebFiltersOrder.HTTP_BASIC)
                 .build();
 
