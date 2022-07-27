@@ -16,19 +16,27 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 import reactor.core.publisher.Mono;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 @Configuration
 @PropertySource("classpath:application.properties")
 @Data
 public class TelegramHandler extends TelegramLongPollingBot {
+
+    public final static Map<String, String>  map = new HashMap<String, String>();
     private final PersonService personService;
+
+
     private final PersonRepository personRepository;
+
+
     @Value("${telegrambot.name}")
     private String USERNAME;
     @Value("${telegrambot.token}")
     private String TOKEN;
-    private String code;
+
 
     @Override
     public String getBotUsername() {
@@ -43,17 +51,18 @@ public class TelegramHandler extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         Message message = update.getMessage();
-         sender(message, "Send number like +998901234567");
-        Optional<String> text = Optional.ofNullable(message.getText());
-        if(text.isPresent()){
+        String number = message.getText();
+        Optional<String> text = Optional.ofNullable(number);
+        if (text.isPresent()) {
             personRepository.existsByPhoneNumber(text)
-                    .flatMap(exist->{
-                        if(Boolean.TRUE.equals(exist)){
-                            code=new GenerateTelegramCode().generateCode();
+                    .flatMap(exist -> {
+                        if (Boolean.TRUE.equals(exist)) {
+                            String code =new GenerateTelegramCode().generateCode();
+                            map.put(number, code);
                             sender(message,code);
                             return Mono.empty();
                         }
-                        sender(message,"Error");
+                        sender(message, "Error");
                         return Mono.empty();
                     }).subscribe();
         }
@@ -61,7 +70,7 @@ public class TelegramHandler extends TelegramLongPollingBot {
 //            code =new GenerateTelegramCode().generateCode();
 //            sender(message, code );
 //        }
-        else{
+        else {
             sender(message, "Number not found !");
         }
     }

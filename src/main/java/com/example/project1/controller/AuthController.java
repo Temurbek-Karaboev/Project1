@@ -6,6 +6,7 @@ import com.example.project1.service.PersonService;
 import com.example.project1.service.TelegramService;
 import com.example.project1.util.JWTUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
@@ -27,28 +28,26 @@ public class AuthController {
 
     @PostMapping("/registration")
     public Mono<Map<String, String>> createPerson(@RequestBody Person person) {
-       return personService.registerUser(person).flatMap(unused -> {
-           String token = jwtUtil.generateToken(person.getName());
-           return Mono.just(Map.of("jwt-token", token));
-       });
+        return personService.registerUser(person).flatMap(unused -> {
+            String token = jwtUtil.generateToken(person.getName());
+            return Mono.just(Map.of("jwt-token", token));
+        });
     }
 
     @PostMapping("/telegram-check/{code}")
-    public Mono<String > TelegramCheck(@PathVariable("code") String code){
-return telegramService.checkTelegram(code).flatMap(data->{
-    if(data){
-        return Mono.just("You are successfully signed in") ;
-    }
-        return  Mono.just("ERROR CODE");
-});
+    public Mono<String> TelegramCheck(@PathVariable("code") String code, Authentication authentication) {
+        return telegramService.checkTelegram(code, authentication).flatMap(data -> {
+            if (data) {
+                return Mono.just("You are successfully signed in");
+            }
+            return Mono.just("ERROR CODE");
+        });
     }
 
     @PostMapping("/login")
-    public  Mono<Map<String, String>> login(@RequestBody AuthDTO authDTO){
+    public Mono<Map<String, String>> login(@RequestBody AuthDTO authDTO) {
         return personService.findByUsername(authDTO);
     }
-
-
 
 
 }
