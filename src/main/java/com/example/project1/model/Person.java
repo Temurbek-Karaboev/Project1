@@ -10,28 +10,19 @@ public class Person {
     private String password;
     @Column("phone_number")
     private String phoneNumber;
-    @Column("room_id")
-    private Long roomId;
     private String role;
-    private String step;
 
-    public String getStep() {
-        return step;
-    }
 
-    public void setStep(String step) {
-        this.step = step;
-    }
+
 
     public Person() {
     }
 
-    public Person(String name, String password, String phoneNumber, String role, String step) {
+    public Person(String name, String password, String phoneNumber, String role) {
         this.name = name;
         this.password = password;
         this.phoneNumber = phoneNumber;
         this.role = role;
-        this.step = step;
     }
 
     public String getName() {
@@ -56,14 +47,6 @@ public class Person {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-    }
-
-    public Long getRoomId() {
-        return roomId;
-    }
-
-    public void setRoomId(Long roomId) {
-        this.roomId = roomId;
     }
 
     public String getRole() {

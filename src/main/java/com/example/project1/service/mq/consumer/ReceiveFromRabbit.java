@@ -6,8 +6,6 @@ import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.DeliverCallback;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
-import reactor.core.publisher.Mono;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeoutException;

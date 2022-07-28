@@ -11,8 +11,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 import java.util.Map;
-
-
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
@@ -21,32 +19,28 @@ public class AuthController {
     ObjectMapper objectMapper = new ObjectMapper();
     private final TelegramService telegramService;
     private final JWTUtil jwtUtil;
-
     public AuthController(PersonService personService, SendToRabbit sendToRabbit, TelegramService telegramService, JWTUtil jwtUtil) {
         this.personService = personService;
         this.sendToRabbit = sendToRabbit;
         this.telegramService = telegramService;
         this.jwtUtil = jwtUtil;
     }
-
     @PostMapping("/registration")
-    public Mono<Map<String, String>> createPerson(@RequestBody Person person) {
-        return personService.registerUser(person).flatMap(unused -> {
-            String token = jwtUtil.generateToken(person.getName());
+    public Mono<String> createPerson(@RequestBody Person person) {
+        return personService.registerUser(person).flatMap(data -> {
+            if (data) {
+                return Mono.just("Please sign in! \n http://localhost:8080/auth/login");
+            }
+            return Mono.just("ERROR THIS NAME ALREADY TAKEN");
+        });
+    }
+    @PostMapping("/telegram-check/message/{code}")
+    public Mono<Map<String, String>> TelegramCheck(@PathVariable("code") String code, Authentication authentication) {
+        return telegramService.checkTelegram(code, authentication).flatMap(unused -> {
+            String token = jwtUtil.generateToken(authentication.getName());
             return Mono.just(Map.of("jwt-token", token));
         });
     }
-
-    @PostMapping("/telegram-check/{code}")
-    public Mono<String> TelegramCheck(@PathVariable("code") String code, Authentication authentication) {
-        return telegramService.checkTelegram(code, authentication).flatMap(data -> {
-            if (data) {
-                return Mono.just("You are successfully signed in");
-            }
-            return Mono.just("ERROR CODE");
-        });
-    }
-
     @PostMapping("/rabbit-sender")
     public Mono<String> RabbitMQSender(@RequestBody String message) throws Exception {
         return sendToRabbit.senderMQ(message).flatMap(data -> {
@@ -60,6 +54,4 @@ public class AuthController {
     public Mono<Map<String, String>> login(@RequestBody AuthDTO authDTO) {
         return personService.findByUsername(authDTO);
     }
-
-
 }

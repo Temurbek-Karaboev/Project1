@@ -302,3 +302,382 @@ org.apache.http.NoHttpResponseException: api.telegram.org:443 failed to respond
 2022-07-28 17:05:07.082 DEBUG 19004 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [2b609cd9-2] 0..1 [java.lang.String]
 2022-07-28 17:05:07.082 DEBUG 19004 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [2b609cd9-2] Writing "Your message was successfully sent"
 2022-07-28 17:05:07.084 DEBUG 19004 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [2b609cd9-2] Completed 200 OK
+2022-07-28 17:42:35.092  INFO 9840 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 9840 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:42:35.094  INFO 9840 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:42:35.473  INFO 9840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:42:35.511  INFO 9840 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:42:36.088  INFO 9840 --- [main] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c9415982-62d7-4041-9b5d-550b864cdae9
+
+2022-07-28 17:42:36.905 DEBUG 9840 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:42:36.912 DEBUG 9840 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:42:36.928 DEBUG 9840 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:42:36.943 DEBUG 9840 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:42:37.218  INFO 9840 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:42:37.225  INFO 9840 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.407 seconds (JVM running for 3.332)
+2022-07-28 17:44:26.753  INFO 17600 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 17600 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:44:26.755  INFO 17600 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:44:27.091  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:44:27.132  INFO 17600 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:44:27.676  INFO 17600 --- [main] ctiveUserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 8c9a4a2b-e1f1-49cb-b4f0-c041849b34fb
+
+2022-07-28 17:44:28.433 DEBUG 17600 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:44:28.440 DEBUG 17600 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:44:28.454 DEBUG 17600 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:44:28.468 DEBUG 17600 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:44:28.684  INFO 17600 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:44:28.691  INFO 17600 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.219 seconds (JVM running for 2.776)
+2022-07-28 17:45:48.470  INFO 11424 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 11424 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:45:48.472  INFO 11424 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:45:48.798  INFO 11424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:45:48.840  INFO 11424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:45:50.190 DEBUG 11424 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:45:50.200 DEBUG 11424 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:45:50.215 DEBUG 11424 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:45:50.234 DEBUG 11424 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:45:50.444  INFO 11424 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:45:50.451  INFO 11424 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.257 seconds (JVM running for 2.816)
+2022-07-28 17:46:09.513  INFO 13176 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 13176 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:46:09.515  INFO 13176 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:46:09.834  INFO 13176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:46:09.871  INFO 13176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:46:11.252 DEBUG 13176 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:46:11.262 DEBUG 13176 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:46:11.283 DEBUG 13176 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:46:11.295 DEBUG 13176 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:46:11.509  INFO 13176 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:46:11.515  INFO 13176 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.277 seconds (JVM running for 2.838)
+2022-07-28 17:48:48.363  INFO 11836 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 11836 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:48:48.365  INFO 11836 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:48:48.713  INFO 11836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:48:48.751  INFO 11836 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:48:50.106 DEBUG 11836 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:48:50.116 DEBUG 11836 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:48:50.132 DEBUG 11836 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:48:50.146 DEBUG 11836 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:48:50.365  INFO 11836 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:48:50.372  INFO 11836 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.285 seconds (JVM running for 2.828)
+2022-07-28 17:48:53.341 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5e83042f-1] HTTP POST "/auth/registration"
+2022-07-28 17:48:53.371 DEBUG 11836 --- [parallel-2] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:48:53.381 DEBUG 11836 --- [parallel-2] s.w.r.r.m.a.RequestMappingHandlerMapping : [5e83042f-1] Mapped to com.example.project1.controller.AuthController#createPerson(Person)
+2022-07-28 17:48:53.389 DEBUG 11836 --- [parallel-2] .r.m.a.RequestBodyMethodArgumentResolver : [5e83042f-1] Content-Type:application/json
+2022-07-28 17:48:53.392 DEBUG 11836 --- [parallel-2] .r.m.a.RequestBodyMethodArgumentResolver : [5e83042f-1] 0..1 [com.example.project1.model.Person]
+2022-07-28 17:48:53.404 DEBUG 11836 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [5e83042f-1] Decoded [com.example.project1.model.Person@214cf374]
+2022-07-28 17:48:53.414 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [5e83042f-1] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2022-07-28 17:48:53.414 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [5e83042f-1] 0..1 [java.lang.String]
+2022-07-28 17:48:53.873 DEBUG 11836 --- [reactor-tcp-nio-1] org.springframework.web.HttpLogging      : [5e83042f-1] Writing "Please sign in with Telegram ! <EOL> http://localhost:8080/auth/telegram-check/{code}"
+2022-07-28 17:48:53.880 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5e83042f-1] Completed 200 OK
+2022-07-28 17:49:08.345 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5e83042f-2] HTTP POST "/auth/registration"
+2022-07-28 17:49:08.346 DEBUG 11836 --- [parallel-3] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:49:08.347 DEBUG 11836 --- [parallel-3] s.w.r.r.m.a.RequestMappingHandlerMapping : [5e83042f-2] Mapped to com.example.project1.controller.AuthController#createPerson(Person)
+2022-07-28 17:49:08.347 DEBUG 11836 --- [parallel-3] .r.m.a.RequestBodyMethodArgumentResolver : [5e83042f-2] Content-Type:application/json
+2022-07-28 17:49:08.348 DEBUG 11836 --- [parallel-3] .r.m.a.RequestBodyMethodArgumentResolver : [5e83042f-2] 0..1 [com.example.project1.model.Person]
+2022-07-28 17:49:08.349 DEBUG 11836 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [5e83042f-2] Decoded [com.example.project1.model.Person@6d4635fc]
+2022-07-28 17:49:08.349 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [5e83042f-2] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2022-07-28 17:49:08.349 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [5e83042f-2] 0..1 [java.lang.String]
+2022-07-28 17:49:08.410 DEBUG 11836 --- [reactor-tcp-nio-2] org.springframework.web.HttpLogging      : [5e83042f-2] Writing "ERROR CODE"
+2022-07-28 17:49:08.412 DEBUG 11836 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [5e83042f-2] Completed 200 OK
+2022-07-28 17:49:50.418  INFO 16764 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 16764 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:49:50.420  INFO 16764 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:49:50.769  INFO 16764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:49:50.806  INFO 16764 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:49:52.211 DEBUG 16764 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:49:52.222 DEBUG 16764 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:49:52.241 DEBUG 16764 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:49:52.256 DEBUG 16764 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:49:52.496  INFO 16764 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:49:52.503  INFO 16764 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.387 seconds (JVM running for 2.926)
+2022-07-28 17:49:58.776 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [24352e59-1] HTTP POST "/auth/registration"
+2022-07-28 17:49:58.806 DEBUG 16764 --- [parallel-2] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:49:58.816 DEBUG 16764 --- [parallel-2] s.w.r.r.m.a.RequestMappingHandlerMapping : [24352e59-1] Mapped to com.example.project1.controller.AuthController#createPerson(Person)
+2022-07-28 17:49:58.824 DEBUG 16764 --- [parallel-2] .r.m.a.RequestBodyMethodArgumentResolver : [24352e59-1] Content-Type:application/json
+2022-07-28 17:49:58.827 DEBUG 16764 --- [parallel-2] .r.m.a.RequestBodyMethodArgumentResolver : [24352e59-1] 0..1 [com.example.project1.model.Person]
+2022-07-28 17:49:58.840 DEBUG 16764 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [24352e59-1] Decoded [com.example.project1.model.Person@153d6f23]
+2022-07-28 17:49:58.852 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [24352e59-1] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2022-07-28 17:49:58.852 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [24352e59-1] 0..1 [java.lang.String]
+2022-07-28 17:49:59.291 DEBUG 16764 --- [reactor-tcp-nio-1] org.springframework.web.HttpLogging      : [24352e59-1] Writing "Please sign in! <EOL> http://localhost:8080/auth/login"
+2022-07-28 17:49:59.298 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [24352e59-1] Completed 200 OK
+2022-07-28 17:50:03.847 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [24352e59-2] HTTP POST "/auth/registration"
+2022-07-28 17:50:03.849 DEBUG 16764 --- [parallel-3] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:50:03.849 DEBUG 16764 --- [parallel-3] s.w.r.r.m.a.RequestMappingHandlerMapping : [24352e59-2] Mapped to com.example.project1.controller.AuthController#createPerson(Person)
+2022-07-28 17:50:03.850 DEBUG 16764 --- [parallel-3] .r.m.a.RequestBodyMethodArgumentResolver : [24352e59-2] Content-Type:application/json
+2022-07-28 17:50:03.850 DEBUG 16764 --- [parallel-3] .r.m.a.RequestBodyMethodArgumentResolver : [24352e59-2] 0..1 [com.example.project1.model.Person]
+2022-07-28 17:50:03.851 DEBUG 16764 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [24352e59-2] Decoded [com.example.project1.model.Person@82cde00]
+2022-07-28 17:50:03.851 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [24352e59-2] Using 'text/plain;charset=UTF-8' given [*/*] and supported [text/plain;charset=UTF-8, text/event-stream, text/plain;charset=UTF-8, */*]
+2022-07-28 17:50:03.851 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [24352e59-2] 0..1 [java.lang.String]
+2022-07-28 17:50:04.015 DEBUG 16764 --- [reactor-tcp-nio-2] org.springframework.web.HttpLogging      : [24352e59-2] Writing "ERROR THIS NAME ALREADY TAKEN"
+2022-07-28 17:50:04.019 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [24352e59-2] Completed 200 OK
+2022-07-28 17:50:33.321 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [24352e59-3] HTTP POST "/auth/login"
+2022-07-28 17:50:33.321 DEBUG 16764 --- [parallel-4] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:50:33.322 DEBUG 16764 --- [parallel-4] s.w.r.r.m.a.RequestMappingHandlerMapping : [24352e59-3] Mapped to com.example.project1.controller.AuthController#login(AuthDTO)
+2022-07-28 17:50:33.323 DEBUG 16764 --- [parallel-4] .r.m.a.RequestBodyMethodArgumentResolver : [24352e59-3] Content-Type:application/json
+2022-07-28 17:50:33.324 DEBUG 16764 --- [parallel-4] .r.m.a.RequestBodyMethodArgumentResolver : [24352e59-3] 0..1 [com.example.project1.dto.AuthDTO]
+2022-07-28 17:50:33.329 DEBUG 16764 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [24352e59-3] Decoded [AuthDTO(name=us, password=1)]
+2022-07-28 17:50:33.332 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [24352e59-3] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2022-07-28 17:50:33.333 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [24352e59-3] 0..1 [java.util.Map<java.lang.String, java.lang.String>]
+2022-07-28 17:50:33.424 DEBUG 16764 --- [reactor-tcp-nio-3] org.springframework.web.HttpLogging      : [24352e59-3] Resolved [BadSqlGrammarException: executeMany; bad SQL grammar [SELECT person.id, person.name, person.password, person.phone_number, person.room_id, person.role FROM person WHERE person.name = $1]; nested exception is io.r2dbc.postgresql.ExceptionFactory$PostgresqlBadGrammarException: [42703] столбец person.room_id не существует] for HTTP POST /auth/login
+2022-07-28 17:50:33.431 ERROR 16764 --- [reactor-tcp-nio-3] a.w.r.e.AbstractErrorWebExceptionHandler : [24352e59-3]  500 Server Error for HTTP POST "/auth/login"
+
+org.springframework.r2dbc.BadSqlGrammarException: executeMany; bad SQL grammar [SELECT person.id, person.name, person.password, person.phone_number, person.room_id, person.role FROM person WHERE person.name = $1]; nested exception is io.r2dbc.postgresql.ExceptionFactory$PostgresqlBadGrammarException: [42703] столбец person.room_id не существует
+	at org.springframework.r2dbc.connection.ConnectionFactoryUtils.convertR2dbcException(ConnectionFactoryUtils.java:235) ~[spring-r2dbc-5.3.22.jar:5.3.22]
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Handler com.example.project1.controller.AuthController#login(AuthDTO) [DispatcherHandler]
+	*__checkpoint ⇢ com.example.project1.config.JWTFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.AuthorizationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authorization.ExceptionTranslationWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.authentication.logout.LogoutWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.savedrequest.ServerRequestCacheWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.SecurityContextServerWebExchangeWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ com.example.project1.config.JWTFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.context.ReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.header.HttpHeaderWriterWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.config.web.server.ServerHttpSecurity$ServerWebExchangeReactorContextWebFilter [DefaultWebFilterChain]
+	*__checkpoint ⇢ org.springframework.security.web.server.WebFilterChainProxy [DefaultWebFilterChain]
+	*__checkpoint ⇢ HTTP POST "/auth/login" [ExceptionHandlingWebHandler]
+Original Stack Trace:
+		at org.springframework.r2dbc.connection.ConnectionFactoryUtils.convertR2dbcException(ConnectionFactoryUtils.java:235) ~[spring-r2dbc-5.3.22.jar:5.3.22]
+		at org.springframework.r2dbc.core.DefaultDatabaseClient.lambda$inConnectionMany$8(DefaultDatabaseClient.java:147) ~[spring-r2dbc-5.3.22.jar:5.3.22]
+		at reactor.core.publisher.Flux.lambda$onErrorMap$29(Flux.java:6943) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Flux.lambda$onErrorResume$30(Flux.java:6996) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:94) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.deferredError(FluxUsingWhen.java:398) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxUsingWhen$RollbackInner.onComplete(FluxUsingWhen.java:475) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2058) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onComplete(Operators.java:2058) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:209) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:209) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.pool.SimpleDequePool.lambda$maybeRecycleAndDrain$19(SimpleDequePool.java:554) ~[reactor-pool-0.2.9.jar:0.2.9]
+		at reactor.core.publisher.LambdaMonoSubscriber.onComplete(LambdaMonoSubscriber.java:135) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onComplete(FluxDoFinally.java:128) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:209) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:238) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:209) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Operators.complete(Operators.java:137) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.netty.FutureMono.doSubscribe(FutureMono.java:122) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+		at reactor.netty.FutureMono$ImmediateFutureMono.subscribe(FutureMono.java:83) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:240) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onComplete(MonoPeekTerminal.java:299) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:368) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onComplete(FluxConcatMap.java:276) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onComplete(FluxPeekFuseable.java:277) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2400) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.request(FluxPeekFuseable.java:144) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onSubscribe(FluxConcatMap.java:236) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeekFuseable$PeekFuseableSubscriber.onSubscribe(FluxPeekFuseable.java:178) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxJust.subscribe(FluxJust.java:68) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribeWith(Mono.java:4512) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4368) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4304) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.pool.SimpleDequePool.maybeRecycleAndDrain(SimpleDequePool.java:548) ~[reactor-pool-0.2.9.jar:0.2.9]
+		at reactor.pool.SimpleDequePool$QueuePoolRecyclerInner.onComplete(SimpleDequePool.java:765) ~[reactor-pool-0.2.9.jar:0.2.9]
+		at reactor.core.publisher.Operators.complete(Operators.java:137) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoEmpty.subscribe(MonoEmpty.java:46) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.pool.SimpleDequePool$QueuePoolRecyclerMono.subscribe(SimpleDequePool.java:877) ~[reactor-pool-0.2.9.jar:0.2.9]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:240) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Operators.complete(Operators.java:137) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoEmpty.subscribe(MonoEmpty.java:46) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:240) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:203) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onComplete(FluxHandleFuseable.java:236) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1817) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoSupplier.subscribe(MonoSupplier.java:62) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onError(MonoIgnoreElements.java:84) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxMap$MapSubscriber.onError(FluxMap.java:134) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFilter$FilterSubscriber.onError(FluxFilter.java:157) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFilter$FilterConditionalSubscriber.onError(FluxFilter.java:291) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onError(FluxMap.java:265) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Operators.error(Operators.java:198) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoError.subscribe(MonoError.java:53) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:52) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4397) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxUsingWhen$UsingWhenSubscriber.onError(FluxUsingWhen.java:364) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.checkTerminated(FluxFlatMap.java:842) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drainLoop(FluxFlatMap.java:608) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.drain(FluxFlatMap.java:588) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFlatMap$FlatMapMain.innerError(FluxFlatMap.java:863) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFlatMap$FlatMapInner.onError(FluxFlatMap.java:990) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onError(FluxHandle.java:210) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyInner.onError(MonoFlatMapMany.java:255) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:198) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.4.21.jar:3.4.21]
+		at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:126) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161) ~[reactor-core-3.4.21.jar:3.4.21]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:635) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:887) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:761) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+		at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:667) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:126) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.4.21.jar:3.4.21]
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:279) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+		at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:388) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+		at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:404) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:314) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:435) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+		at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+Caused by: io.r2dbc.postgresql.ExceptionFactory$PostgresqlBadGrammarException: столбец person.room_id не существует
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:96) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.createException(ExceptionFactory.java:65) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at io.r2dbc.postgresql.ExceptionFactory.handleErrorResponse(ExceptionFactory.java:132) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at reactor.core.publisher.FluxHandleFuseable$HandleFuseableSubscriber.onNext(FluxHandleFuseable.java:176) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.4.21.jar:3.4.21]
+	at io.r2dbc.postgresql.util.FluxDiscardOnCancel$FluxDiscardOnCancelSubscriber.onNext(FluxDiscardOnCancel.java:91) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:113) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:126) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.drain(FluxCreate.java:814) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxCreate$BufferAsyncSink.next(FluxCreate.java:739) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxCreate$SerializedFluxSink.next(FluxCreate.java:161) ~[reactor-core-3.4.21.jar:3.4.21]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$Conversation.emit(ReactorNettyClient.java:635) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.emit(ReactorNettyClient.java:887) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:761) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at io.r2dbc.postgresql.client.ReactorNettyClient$BackendMessageSubscriber.onNext(ReactorNettyClient.java:667) ~[r2dbc-postgresql-0.9.1.RELEASE.jar:0.9.1.RELEASE]
+	at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:126) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxPeekFuseable$PeekConditionalSubscriber.onNext(FluxPeekFuseable.java:854) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:224) ~[reactor-core-3.4.21.jar:3.4.21]
+	at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:279) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+	at reactor.netty.channel.FluxReceive.onInboundNext(FluxReceive.java:388) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+	at reactor.netty.channel.ChannelOperations.onInboundNext(ChannelOperations.java:404) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93) ~[reactor-netty-core-1.0.21.jar:1.0.21]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:327) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:314) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:435) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:279) ~[netty-codec-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496) ~[netty-transport-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.79.Final.jar:4.1.79.Final]
+	at java.base/java.lang.Thread.run(Thread.java:829) ~[na:na]
+
+2022-07-28 17:50:33.443 DEBUG 16764 --- [reactor-tcp-nio-3] org.springframework.web.HttpLogging      : [24352e59-3] Encoding [{timestamp=Thu Jul 28 17:50:33 UZT 2022, path=/auth/login, status=500, error=Internal Server Error,  (truncated)...]
+2022-07-28 17:50:33.449 DEBUG 16764 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [24352e59-3] Completed 500 INTERNAL_SERVER_ERROR
+2022-07-28 17:51:23.094  INFO 13616 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 13616 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:51:23.097  INFO 13616 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:51:23.418  INFO 13616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:51:23.453  INFO 13616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:51:25.068 DEBUG 13616 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:51:25.078 DEBUG 13616 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:51:25.093 DEBUG 13616 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:51:25.114 DEBUG 13616 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:51:25.324  INFO 13616 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:51:25.332  INFO 13616 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.508 seconds (JVM running for 3.068)
+2022-07-28 17:51:28.455 DEBUG 13616 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1d557141-1] HTTP POST "/auth/login"
+2022-07-28 17:51:28.483 DEBUG 13616 --- [parallel-2] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:51:28.493 DEBUG 13616 --- [parallel-2] s.w.r.r.m.a.RequestMappingHandlerMapping : [1d557141-1] Mapped to com.example.project1.controller.AuthController#login(AuthDTO)
+2022-07-28 17:51:28.502 DEBUG 13616 --- [parallel-2] .r.m.a.RequestBodyMethodArgumentResolver : [1d557141-1] Content-Type:application/json
+2022-07-28 17:51:28.505 DEBUG 13616 --- [parallel-2] .r.m.a.RequestBodyMethodArgumentResolver : [1d557141-1] 0..1 [com.example.project1.dto.AuthDTO]
+2022-07-28 17:51:28.521 DEBUG 13616 --- [reactor-http-nio-3] org.springframework.web.HttpLogging      : [1d557141-1] Decoded [AuthDTO(name=us, password=1)]
+2022-07-28 17:51:28.534 DEBUG 13616 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [1d557141-1] Using 'application/json' given [*/*] and supported [application/json, application/*+json, application/x-ndjson, text/event-stream]
+2022-07-28 17:51:28.534 DEBUG 13616 --- [reactor-http-nio-3] o.s.w.r.r.m.a.ResponseBodyResultHandler  : [1d557141-1] 0..1 [java.util.Map<java.lang.String, java.lang.String>]
+2022-07-28 17:51:28.832 DEBUG 13616 --- [reactor-tcp-nio-1] org.springframework.web.HttpLogging      : [1d557141-1] Encoding [{Message=Please sign in with Telegram ! <EOL> http://localhost:8080/auth/telegram-check/{code}}]
+2022-07-28 17:51:28.839 DEBUG 13616 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1d557141-1] Completed 200 OK
+2022-07-28 17:52:04.415 DEBUG 13616 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1d557141-2] HTTP POST "/auth/telegram-check/533862"
+2022-07-28 17:52:04.416 DEBUG 13616 --- [parallel-3] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:52:04.425 DEBUG 13616 --- [parallel-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [1d557141-2] Completed 401 UNAUTHORIZED
+2022-07-28 17:56:01.086  INFO 13144 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 13144 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:56:01.088  INFO 13144 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:56:01.420  INFO 13144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:56:01.461  INFO 13144 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:56:02.899 DEBUG 13144 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:56:02.909 DEBUG 13144 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:56:02.925 DEBUG 13144 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:56:02.937 DEBUG 13144 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:56:03.147  INFO 13144 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:56:03.154  INFO 13144 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.355 seconds (JVM running for 2.925)
+2022-07-28 17:56:46.902 DEBUG 13144 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [febd5fae-1] HTTP POST "/auth/telegram-check/message/944438"
+2022-07-28 17:56:46.916 DEBUG 13144 --- [parallel-2] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:56:46.928 DEBUG 13144 --- [parallel-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [febd5fae-1] Completed 401 UNAUTHORIZED
+2022-07-28 17:57:49.326  INFO 16072 --- [main] c.example.project1.Project1Application   : Starting Project1Application using Java 11.0.15 on DESKTOP-VO3SPUR with PID 16072 (C:\Users\user\IdeaProjects\Project1\target\classes started by user in C:\Users\user\IdeaProjects\Project1)
+2022-07-28 17:57:49.328  INFO 16072 --- [main] c.example.project1.Project1Application   : No active profile set, falling back to 1 default profile: "default"
+2022-07-28 17:57:49.666  INFO 16072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data R2DBC repositories in DEFAULT mode.
+2022-07-28 17:57:49.705  INFO 16072 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 1 R2DBC repository interfaces.
+2022-07-28 17:57:51.047 DEBUG 16072 --- [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-07-28 17:57:51.058 DEBUG 16072 --- [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-07-28 17:57:51.074 DEBUG 16072 --- [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2022-07-28 17:57:51.086 DEBUG 16072 --- [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-07-28 17:57:51.302  INFO 16072 --- [main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8080
+2022-07-28 17:57:51.309  INFO 16072 --- [main] c.example.project1.Project1Application   : Started Project1Application in 2.265 seconds (JVM running for 2.806)
+2022-07-28 17:57:53.666 DEBUG 16072 --- [reactor-http-nio-3] o.s.w.s.adapter.HttpWebHandlerAdapter    : [077a2029-1] HTTP POST "/auth/telegram-check/message/944438"
+2022-07-28 17:57:53.696 DEBUG 16072 --- [parallel-2] o.s.w.s.s.DefaultWebSessionManager       : Created new WebSession.
+2022-07-28 17:57:53.710 DEBUG 16072 --- [parallel-2] o.s.w.s.adapter.HttpWebHandlerAdapter    : [077a2029-1] Completed 401 UNAUTHORIZED

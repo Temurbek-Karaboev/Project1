@@ -43,6 +43,10 @@ public class SecurityConfig {
                 .permitAll()
                 .and()
                 .authorizeExchange()
+                .pathMatchers("/auth/telegram-check/*")
+                .hasRole("USER")
+                .and()
+                .authorizeExchange()
                 .anyExchange().authenticated()
                 .and().formLogin().disable()
                 .addFilterAt(new JWTFilter(jwtUtil),
@@ -51,12 +55,5 @@ public class SecurityConfig {
 
 
     }
-
-    /*        return http
-                .csrf()
-                .disable()
-//                .authorizeExchange()
-//                .anyExchange().permitAll()
-                .and().build();*/
 }
 

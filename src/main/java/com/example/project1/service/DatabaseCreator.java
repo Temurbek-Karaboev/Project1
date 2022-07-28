@@ -34,16 +34,14 @@ public class DatabaseCreator {
                     "    name         varchar not null,\n" +
                     "    password     varchar not null,\n" +
                     "    phone_number varchar,\n" +
-                    "    room_id      integer,\n" +
-                    "    role         varchar not null,\n" +
-                    "    step         varchar\n" +
+                    "    role         varchar not null\n" +
                     ");\n" +
                     "\n" +
                     "alter table person\n" +
                     "    owner to postgres;\n" +
                     "\n" +
                     "create unique index person_id_uindex\n" +
-                    "    on person (id);\n");
+                    "    on person (id);");
 
             System.out.println("Person table is created");
 
@@ -52,8 +50,8 @@ public class DatabaseCreator {
         }
 
         try {
-            statement.execute("INSERT INTO person(id, name , password, phone_number, room_id , role) values\n" +
-                    "                                                                         (0, 'admin', '$2a$10$1fGl7V0Z9xb6gC0AVtcXfu2Rjy3HsQyaqCjQ7mW0Fg6mkyD9DtnjO', '+12345', 0, 'ROLE_USER')");
+            statement.execute("INSERT INTO person(id, name , password, phone_number , role) values\n" +
+                    "                                                                         (0, 'admin', '$2a$10$1fGl7V0Z9xb6gC0AVtcXfu2Rjy3HsQyaqCjQ7mW0Fg6mkyD9DtnjO', '+12345', 'ROLE_USER')");
 
             System.out.println("DEFAULT USERNAME: ADMIN  \n DEFAULT PASSWORD: 123");
         }

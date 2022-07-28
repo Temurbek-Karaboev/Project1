@@ -11,6 +11,7 @@ import java.util.Optional;
 public interface PersonRepository extends R2dbcRepository<Person, Long> {
     Mono<Person> findByName(String name);
     Mono<Boolean> existsByPhoneNumber(Optional<String > phoneNumber);
+    Mono<Boolean> existsByName(String name);
 
 
 
