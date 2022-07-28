@@ -8,25 +8,20 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
-
 import java.util.Map;
-
 @Service
 public class PersonService {
+    private final static String HOST_NAME = "localhost";
+    private final static String QUEUE_NAME = "demo-lab-queue";
     private final PersonRepository personRepository;
     private final JWTUtil jwtUtil;
     private final PasswordEncoder passwordEncoder;
     ObjectMapper objectMapper = new ObjectMapper();
-
-
-
-
-    public PersonService(PersonRepository personRepository, JWTUtil jwtUtil, PasswordEncoder passwordEncoder) {
+    public PersonService(PersonRepository personRepository, JWTUtil jwtUtil, PasswordEncoder passwordEncoder)  {
         this.personRepository = personRepository;
         this.jwtUtil = jwtUtil;
         this.passwordEncoder = passwordEncoder;
     }
-
     public  Mono<Map<String, String>> findByUsername(AuthDTO dto) {
         return personRepository.findByName(dto.getName()).flatMap(person -> {
 
@@ -37,7 +32,6 @@ public class PersonService {
             return Mono.just(Map.of("Error",  " Bad credentials " ));
         });
     }
-
     public Mono<String> registerUser(Person person){
         person.setPassword(passwordEncoder.encode(person.getPassword()));
         person.setRole("ROLE_USER");
@@ -49,6 +43,5 @@ public class PersonService {
     }
 
 
-
-
 }
+

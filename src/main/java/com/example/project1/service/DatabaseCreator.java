@@ -60,54 +60,5 @@ public class DatabaseCreator {
         catch (Exception e) {
             System.out.println("Admin is already created");
         }
-
-        try{
-            statement.execute("create table hotel\n" +
-                    "(\n" +
-                    "    id             bigserial,\n" +
-                    "    name           varchar not null,\n" +
-                    "    rooms          bigint  not null,\n" +
-                    "    reserved_rooms bigint  not null\n" +
-                    ");\n" +
-                    "\n" +
-                    "create unique index hotel_id_uindex\n" +
-                    "    on hotel (id);\n" +
-                    "\n" +
-                    "alter table hotel\n" +
-                    "    add constraint hotel_pk\n" +
-                    "        primary key (id);\n");
-        }
-        catch (Exception e) {
-            System.out.println("Hotel table is already created");
-        }
-
-
-
-        try {
-            statement.execute("create table room\n" +
-                    "(\n" +
-                    "    id           bigserial\n" +
-                    "        constraint room_pk\n" +
-                    "            primary key,\n" +
-                    "    type         varchar,\n" +
-                    "    price        bigint,\n" +
-                    "    hotel_id     bigint                not null,\n" +
-                    "    user_id      bigint,\n" +
-                    "    start_date   bigint,\n" +
-                    "    end_date     bigint,\n" +
-                    "    \"isReserved\" boolean default false not null\n" +
-                    ");\n" +
-                    "\n" +
-                    "alter table room \n" +
-                    "    owner to postgres;\n" +
-                    "\n" +
-                    "create unique index room_id_uindex\n" +
-                    "    on room (id);");
-            System.out.println("Room table is created");
-        } catch (Exception e) {
-            System.out.println("Room table is already created");
-        }
-
-
     }
 }

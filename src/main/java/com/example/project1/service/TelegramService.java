@@ -7,11 +7,9 @@ import reactor.core.publisher.Mono;
 
 @Service
 public class TelegramService {
-    private final TelegramHandler telegramHandler;
     private final PersonRepository personRepository;
 
-    public TelegramService(TelegramHandler telegramHandler, PersonRepository personRepository) {
-        this.telegramHandler = telegramHandler;
+    public TelegramService(PersonRepository personRepository) {
         this.personRepository = personRepository;
     }
 
@@ -22,10 +20,11 @@ public class TelegramService {
     public Mono<Boolean> checkTelegram(String code, Authentication auth) {
         return personRepository.findByName(auth.getName())
                 .flatMap(data->{
-                    String tgCode = telegramHandler.map.get(data.getPhoneNumber());
+                    String tgCode = TelegramHandler.map.get(data.getPhoneNumber());
                     return Mono.just(code.equals(tgCode));
                 });
-
-
     }
+
+
+
 }
