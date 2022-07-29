@@ -3,7 +3,7 @@ package com.example.project1.dto;
 import lombok.Data;
 
 @Data
-public class AuthDTO {
+public class TelegramDTO {
     private String name;
-    private String password;
+    private String code;
 }

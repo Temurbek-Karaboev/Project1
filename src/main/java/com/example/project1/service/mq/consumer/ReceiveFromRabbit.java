@@ -14,7 +14,6 @@ import java.util.concurrent.TimeoutException;
 public class ReceiveFromRabbit {
     private final static String HOST_NAME = "localhost";
     private final static String QUEUE_NAME = "my-second-queue";
-
     @Bean
     public static void receiverMQ() throws TimeoutException, IOException {
         final ConnectionFactory connectionFactory = new ConnectionFactory();

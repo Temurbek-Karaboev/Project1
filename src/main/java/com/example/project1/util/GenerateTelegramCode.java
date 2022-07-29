@@ -1,6 +1,5 @@
 package com.example.project1.util;
 
-
 public class GenerateTelegramCode {
     public String generateCode(){
         StringBuilder randomNumber = new StringBuilder(Integer.toString((int) (Math.random() * 1000000)));

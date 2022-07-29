@@ -22,13 +22,12 @@ public class SecurityConfig {
     @Bean
     public MapReactiveUserDetailsService userDetailsService() {
         UserDetails user = User
-                .withUsername("user")
-                .password(getPasswordEncoder().encode("password"))
-                .roles("USER")
+                .withUsername("admin")
+                .password(getPasswordEncoder().encode("123"))
+                .roles("ADMIN")
                 .build();
         return new MapReactiveUserDetailsService(user);
     }
-
     @Bean
     public PasswordEncoder getPasswordEncoder() {
         return new BCryptPasswordEncoder();
@@ -39,12 +38,8 @@ public class SecurityConfig {
                 .csrf()
                 .disable()
                 .authorizeExchange()
-                .pathMatchers("/auth/registration", "/auth/login")
+                .pathMatchers("/auth/registration", "/auth/login", "/auth/telegram-check/message/")
                 .permitAll()
-                .and()
-                .authorizeExchange()
-                .pathMatchers("/auth/telegram-check/*")
-                .hasRole("USER")
                 .and()
                 .authorizeExchange()
                 .anyExchange().authenticated()

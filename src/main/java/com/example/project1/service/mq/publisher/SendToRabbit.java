@@ -3,13 +3,16 @@ package com.example.project1.service.mq.publisher;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 @Service
 public class SendToRabbit {
-    private final static String HOST_NAME = "localhost";
-    private final static String QUEUE_NAME = "demo-lab-queue";
+    @Value("${rabbit.host.name}")
+    private String HOST_NAME ;
+    @Value("${rabbit.host.queue.send}")
+    private String QUEUE_NAME ;
     public Mono<Boolean> senderMQ(String sender) throws Exception{
         final ConnectionFactory connectionFactory = new ConnectionFactory();
         connectionFactory.setHost(HOST_NAME);

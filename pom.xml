@@ -102,6 +102,13 @@
             <version>5.15.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>3.0.4</version>
+        </dependency>
+
+
 
 
     </dependencies>
